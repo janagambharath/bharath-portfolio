@@ -1,1 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bharath - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="sidebar">
+    <div class="profile-pic">
+      <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Avatar">
+    </div>
+    <div class="name">Janagam Bharath</div>
+    <div class="tagline typed-text">Loading...</div>
 
+    <div class="nav-menu">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <a href="/resume" class="resume-btn" download>Download Resume</a>
+
+    <div class="social-icons">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Email</a>
+    </div>
+  </div>
+
+  <div class="content">
+    <div id="home" class="page-section active">
+      <h1>Welcome to my Portfolio</h1>
+      <p>I am a passionate AI & LLM Engineer building intelligent web apps with Python + Flask.</p>
+    </div>
+    <div id="about" class="page-section">
+      <h2>About Me</h2>
+      <p>I am Janagam Bharath, an enthusiastic developer focused on AI, Python, and creative tech.</p>
+    </div>
+    <div id="projects" class="page-section">
+      <h2>Projects</h2>
+      <ul>
+        <li>Smart Waste Monitoring System (IoT + Sensor)</li>
+        <li>Billing System in C</li>
+        <li>LLM Chatbot (Python + OpenAI API)</li>
+      </ul>
+    </div>
+    <div id="contact" class="page-section">
+      <h2>Contact Me</h2>
+      <p>Email: your@email.com</p>
+    </div>
+     <a href="/static/Janagam Bharath - Resume-1.pdf" class="resume-btn" download>Download Resume</a>
+    
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
