@@ -1,60 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Janagam Bharath | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon" />
+  <script defer src="{{ url_for('static', filename='script.js') }}"></script>
 </head>
 <body>
   <div class="sidebar">
-    <div class="profile-pic">
-      <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Avatar">
-    </div>
     <h1 class="name">Janagam Bharath</h1>
-    <p class="tagline typed-text">Loading...</p>
-    <nav class="nav-menu">
-      <a href="#home" class="nav-link active">Home</a>
-      <a href="#about" class="nav-link">About</a>
-      <a href="#projects" class="nav-link">Projects</a>
-      <a href="#contact" class="nav-link">Contact</a>
-    </nav>
-    <a href="{{ url_for('static', filename='Janagam Bharath - Resume-1.pdf') }}" class="resume-btn" download>📄 Download Resume</a>
-    <div class="social-icons">
-      <a href="mailto:janagambharath1107@gmail.com">✉️</a>
-      <a href="https://github.com/janagambharath" target="_blank">🐱</a>
-      <a href="https://www.linkedin.com/in/janagam-bharath-9ab1b235b/" target="_blank">💼</a>
+    <div class="profile-pic">
+      <img src="{{ url_for('static', filename='avatar.jpg') }}" alt="Avatar" />
     </div>
-  </div>
+    <div class="tagline">Aspiring LLM Engineer</div><div class="nav-menu">
+  <a href="#home" class="nav-link active">Home</a>
+  <a href="#about" class="nav-link">About</a>
+  <a href="#projects" class="nav-link">Projects</a>
+  <a href="#contact" class="nav-link">Contact</a>
+</div>
 
-  <div class="content">
+<a class="resume-btn" href="{{ url_for('static', filename='Janagam Bharath - Resume-1.pdf') }}" download>Download Resume</a>
+
+<div class="social-icons">
+  <a href="mailto:janagambharath1107@gmail.com" target="_blank"><i class="fa fa-envelope"></i></a>
+  <a href="https://github.com/janagambharath" target="_blank"><i class="fa fa-github"></i></a>
+  <a href="https://www.linkedin.com/in/janagam-bharath-9ab1b235b/" target="_blank"><i class="fa fa-linkedin"></i></a>
+</div>
+
+  </div>  <div class="content">
     <section id="home" class="page-section active">
-      <h2>Welcome</h2>
-      <p>I am a passionate AI & LLM Engineer, building modern apps with Python, Flask & OpenAI APIs.</p>
-    </section>
-    <section id="about" class="page-section">
-      <h2>About Me</h2>
-      <p>I’m Janagam Bharath, an enthusiastic developer with a background in ECE, now pursuing a future in full stack AI & LLM engineering. I’m focused, self-motivated and always improving.</p>
-    </section>
-    <section id="projects" class="page-section">
-      <h2>Projects</h2>
-      <ul>
-        <li>💡 Smart Waste Monitoring System (IoT)</li>
-        <li>🧾 Billing System in C</li>
-        <li>🤖 AI Chatbot using OpenAI API</li>
-        <li>🖥️ This Portfolio Website (Python + Flask)</li>
-      </ul>
-    </section>
-    <section id="contact" class="page-section">
-      <h2>Contact Me</h2>
-      <p>Email: janagambharath1107@gmail.com</p>
-      <p>GitHub: <a href="https://github.com/janagambharath" target="_blank">janagambharath</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/janagam-bharath-9ab1b235b/" target="_blank">janagam-bharath</a></p>
-    </section>
-  </div>
+      <h2>Home</h2>
+      <p>Welcome to my personal portfolio website. I am Janagam Bharath, an aspiring LLM Engineer passionate about AI and full-stack development.</p>
+    </section><section id="about" class="page-section">
+  <h2>About Me</h2>
+  <p>I’m currently pursuing my diploma in ECE and preparing to transition into B.Tech CSE. My focus is on mastering Python, Flask, OpenAI API, LangChain, and building AI-powered applications.</p>
+</section>
 
-  <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
+<section id="projects" class="page-section">
+  <h2>Projects</h2>
+  <ul>
+    <li>Portfolio Website (You’re looking at it!)</li>
+    <li>Billing System in C</li>
+    <li>Weather App (Flask)</li>
+  </ul>
+</section>
+
+<section id="contact" class="page-section">
+  <h2>Contact</h2>
+  <p>Email: janagambharath1107@gmail.com</p>
+  <p>GitHub: <a href="https://github.com/janagambharath" target="_blank">github.com/janagambharath</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/janagam-bharath-9ab1b235b/" target="_blank">linkedin.com/in/janagam-bharath</a></p>
+</section>
+
+  </div>  <!-- Font Awesome Icons -->  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script></body>
 </html>
