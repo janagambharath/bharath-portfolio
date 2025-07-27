@@ -1,38 +1,24 @@
-const navLinks = document.querySelectorAll('.nav-link');
-const sections = document.querySelectorAll('.page-section');
+document.addEventListener("DOMContentLoaded", () => {
+  const links = document.querySelectorAll('.nav-menu a');
+  const sections = document.querySelectorAll('.page-section');
 
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    e.preventDefault();
-    navLinks.forEach(l => l.classList.remove('active'));
-    sections.forEach(s => s.classList.remove('active'));
-    link.classList.add('active');
-    const targetId = link.getAttribute('href').substring(1);
-    document.getElementById(targetId).classList.add('active');
+  links.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+
+      // Remove active class from all links and sections
+      links.forEach(l => l.classList.remove('active'));
+      sections.forEach(s => s.classList.remove('active'));
+
+      // Add active class to clicked link and matching section
+      link.classList.add('active');
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      if (targetSection) {
+        targetSection.classList.add('active');
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
   });
 });
-
-const words = ["LLM Engineer", "Python Developer", "AI Enthusiast"];
-let i = 0, j = 0, isDeleting = false;
-const element = document.querySelector('.typed-text');
-
-function type() {
-  if (!element) return;
-  const word = words[i];
-  if (isDeleting) {
-    element.textContent = word.substring(0, j--);
-  } else {
-    element.textContent = word.substring(0, j++);
-  }
-  if (!isDeleting && j === word.length) {
-    isDeleting = true;
-    setTimeout(type, 1000);
-  } else if (isDeleting && j === 0) {
-    isDeleting = false;
-    i = (i + 1) % words.length;
-    setTimeout(type, 500);
-  } else {
-    setTimeout(type, isDeleting ? 50 : 100);
-  }
-}
-type();
