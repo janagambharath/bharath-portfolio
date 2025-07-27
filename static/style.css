@@ -1,195 +1,128 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(to right, #0f172a, #1e293b);
-  color: #ffffff;
+  background: #0f0f0f;
+  color: #f0f0f0;
   display: flex;
-  min-height: 100vh;
+  flex-direction: row;
+  height: 100vh;
   overflow: hidden;
 }
 
-/* Sidebar */
 .sidebar {
   width: 260px;
-  background: #1e293b;
-  padding: 30px 20px;
+  background: #111;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.6);
+  border-right: 2px solid #222;
+  box-shadow: 0 0 10px #0ff;
 }
 
 .profile-pic img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 3px solid #38bdf8;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-.profile-pic img:hover {
-  transform: scale(1.05);
+  border: 3px solid #0ff;
+  box-shadow: 0 0 15px #0ff;
 }
 
 .name {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.5rem;
+  margin: 15px 0 5px 0;
   text-align: center;
-  color: #00f7ff;
 }
 
 .tagline {
+  color: #0ff;
+  font-weight: bold;
   font-size: 0.9rem;
-  color: #94a3b8;
   text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Navigation */
 .nav-menu {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .nav-link {
   text-decoration: none;
-  color: #cbd5e1;
-  font-weight: 500;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: 0.3s ease;
+  color: #ccc;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 6px;
   text-align: center;
+  transition: 0.3s;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  background-color: #00f7ff;
-  color: #0f172a;
-  font-weight: 600;
-  box-shadow: 0 4px 15px rgba(0, 247, 255, 0.3);
+  background: #0ff;
+  color: #111;
 }
 
-/* Resume Button */
 .resume-btn {
+  display: inline-block;
+  margin: 10px 0;
+  background: #0ff;
+  color: #111;
+  padding: 8px 12px;
+  border-radius: 6px;
   text-decoration: none;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #00f7ff;
-  color: #0f172a;
-  border-radius: 10px;
-  font-weight: 600;
-  transition: 0.3s;
-  text-align: center;
-}
-
-.resume-btn:hover {
-  background: #38bdf8;
-}
-
-/* Social Icons */
-.social-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-top: 10px;
-  font-size: 0.9rem;
+  font-weight: bold;
 }
 
 .social-icons a {
-  color: #94a3b8;
+  margin: 10px;
+  font-size: 1.4rem;
   text-decoration: none;
-  transition: 0.3s;
+  color: #0ff;
 }
 
-.social-icons a:hover {
-  color: #00f7ff;
-}
-
-/* Content Layout */
 .content {
-  margin-left: 260px;
-  padding: 60px 40px;
-  width: calc(100% - 260px);
+  flex-grow: 1;
+  padding: 40px;
   overflow-y: auto;
-  height: 100vh;
-  scroll-behavior: smooth;
 }
 
 .page-section {
   display: none;
-  min-height: calc(100vh - 100px);
-  padding: 40px 20px;
-  transition: opacity 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 .page-section.active {
   display: block;
-  animation: fade 0.6s ease;
 }
 
-@keyframes fade {
-  from { opacity: 0; transform: translateY(20px); }
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Mobile Responsive */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   body {
     flex-direction: column;
   }
 
   .sidebar {
     width: 100%;
-    height: auto;
     flex-direction: row;
-    justify-content: space-around;
-    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px;
-    box-shadow: none;
-  }
-
-  .content {
-    margin-left: 0;
-    width: 100%;
-    height: auto;
-    padding: 20px;
   }
 
   .nav-menu {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
+    justify-content: space-around;
+    width: 100%;
   }
 
-  .resume-btn {
-    font-size: 0.8rem;
-    padding: 6px 12px;
-  }
-
-  .profile-pic img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .tagline {
-    display: none;
-  }
-
-  .social-icons {
-    display: none;
+  .content {
+    padding: 20px;
   }
 }
