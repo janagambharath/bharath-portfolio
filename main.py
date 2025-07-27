@@ -8,7 +8,7 @@ def home():
 
 @app.route("/resume")
 def resume():
-    return send_from_directory(".", "resume.pdf")
+    return send_from_directory("static", "Janagam Bharath - Resume-1.pdf")
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080)
