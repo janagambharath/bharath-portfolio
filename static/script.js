@@ -1,4 +1,3 @@
-
 const navLinks = document.querySelectorAll('.nav-link');
 const sections = document.querySelectorAll('.page-section');
 
@@ -13,14 +12,13 @@ navLinks.forEach(link => {
   });
 });
 
-const words = ["AI Developer", "Python Programmer", "LLM Engineer"];
+const words = ["LLM Engineer", "Python Developer", "AI Enthusiast"];
 let i = 0, j = 0, isDeleting = false;
-const speed = 100;
 const element = document.querySelector('.typed-text');
 
 function type() {
   if (!element) return;
-  let word = words[i];
+  const word = words[i];
   if (isDeleting) {
     element.textContent = word.substring(0, j--);
   } else {
@@ -32,10 +30,9 @@ function type() {
   } else if (isDeleting && j === 0) {
     isDeleting = false;
     i = (i + 1) % words.length;
-    setTimeout(type, 300);
+    setTimeout(type, 500);
   } else {
-    setTimeout(type, isDeleting ? speed / 2 : speed);
+    setTimeout(type, isDeleting ? 50 : 100);
   }
 }
-
 type();
