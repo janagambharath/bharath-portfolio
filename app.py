@@ -5,10 +5,10 @@ app = Flask(__name__)
 
 # Portfolio data based on resume
 portfolio_data = {
-    'name': 'Janagam Bharath',
+    'name': 'Bharath',
     'title': 'Aspiring Software Developer',
-    'location': 'Hyderabad, Telangana',
-    'phone': '+91-7995854994',
+    'location': 'Hyderbad,Telangana',
+    'phone': '',
     'email': 'janagambharath1107@gmail.com',
     'github': 'https://github.com/janagambharath',
     'linkedin': 'https://www.linkedin.com/in/janagam-bharath-9ab1b235b/',
