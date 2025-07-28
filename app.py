@@ -6,7 +6,7 @@ app = Flask(__name__)
 # Portfolio data based on resume
 portfolio_data = {
     'name': 'Bharath',
-    'title': 'Aspiring Software Developer',
+    'title': 'Aspiring LLM Engineer',
     'location': 'Hyderbad,Telangana',
     'phone': '',
     'email': 'janagambharath1107@gmail.com',
