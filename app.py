@@ -14,9 +14,9 @@ portfolio_data = {
     'linkedin': 'https://www.linkedin.com/in/janagam-bharath-9ab1b235b/',
     
     'about': {
-        'education': 'Diploma in Electronics and Communication Engineering at Annamacharya Institute of Technology',
-        'current_status': 'Currently in 6th Semester, planning to transition into B.Tech CSE via ECET',
-        'objective': 'Passionate and highly motivated aspiring software developer with strong programming skills, committed to building real-world applications and securing a developer role in a top-tier tech company.'
+        'education': 'Diploma in ECE',
+        'current_status': '',
+        'objective': 'Aspiring LLM Engineer and AI App Developer with a strong foundation in Python, Flask, and Java, combined with hands-on experience in web development and creative video editing. Passionate about building intelligent applications using LLMs, APIs, and modern AI tools to solve real-world problems. Eager to contribute to innovative tech teams, continuously learn, and grow into a full-stack AI developer to build impactful and scalable AI-driven solutions.'
     },
     
     'skills': {
