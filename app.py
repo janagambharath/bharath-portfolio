@@ -12,22 +12,28 @@ portfolio_data = {
     'email': 'janagambharath1107@gmail.com',
     'github': 'https://github.com/janagambharath',
     'linkedin': 'https://www.linkedin.com/in/janagam-bharath-9ab1b235b/',
+    'bharath ai': 'https://bharathai.onrender.com',
     
     'about': {
         'education': 'Diploma in ECE',
         'current_status': '',
-        'objective': 'Aspiring LLM Engineer and AI App Developer with a strong foundation in Python, Flask, and Java, combined with hands-on experience in web development and creative video editing. Passionate about building intelligent applications using LLMs, APIs, and modern AI tools to solve real-world problems. Eager to contribute to innovative tech teams, continuously learn, and grow into a full-stack AI developer to build impactful and scalable AI-driven solutions.'
+        'objective': 'Aspiring LLM Engineer and AI App Developer with a strong foundation in Python, Flask, and J, combined with hands-on experience in web development and creative video editing. Passionate about building intelligent applications using LLMs, APIs, and modern AI tools to solve real-world problems. Eager to contribute to innovative tech teams, continuously learn, and grow into a full-stack AI developer to build impactful and scalable AI-driven solutions.'
     },
     
     'skills': {
-        'programming': ['C', 'Java', 'Python'],
-        'web': ['HTML', 'Flask', 'Java Spring Boot'],
+        'programming': ['C', , 'Python'],
+        'web': ['HTML', 'Flask', 'CSS'],
         'data_structures': ['Arrays', 'Searching', 'Sorting', 'Recursion', 'OOP'],
         'tools': ['Termux', 'AIDE (Android)', 'VS Code', 'Git & GitHub'],
         'os': ['Windows', 'Android']
     },
     
     'projects': [
+        {
+            'name':'Bharath's Ai',
+            'language':'Python',
+            'description':'It is Bharath's personal portfolio assistance and Ai',
+            'tech_stack':['Python','Flask','Deepsake Ai','Render','Json','Api']
         {
             'name': 'Billing System',
             'language': 'C',
@@ -42,21 +48,21 @@ portfolio_data = {
         },
         {
             'name': 'Number Guessing Game',
-            'language': 'Java',
+            'language': 'Python',
             'description': 'Console game using random number generation',
-            'tech_stack': ['Java', 'Random Generation', 'Game Logic']
+            'tech_stack': ['python', 'Random Generation', 'Game Logic']
         },
         {
             'name': 'Digital Clock',
-            'language': 'Java',
+            'language': 'Python',
             'description': 'Displays current time in digital format',
-            'tech_stack': ['Java', 'Time API', 'GUI']
+            'tech_stack': ['Python', 'Time API', 'GUI']
         },
         {
             'name': 'Calculator',
-            'language': 'Java',
+            'language': 'Python',
             'description': 'Performs basic arithmetic operations',
-            'tech_stack': ['Java', 'Mathematical Operations', 'UI']
+            'tech_stack': ['python', 'Mathematical Operations', 'UI']
         }
     ],
     
