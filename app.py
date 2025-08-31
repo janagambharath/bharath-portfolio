@@ -7,7 +7,7 @@ app = Flask(__name__)
 portfolio_data = {
     'name': 'Bharath',
     'title': 'Aspiring LLM Engineer',
-    'location': 'Hyderabad,Telangana',
+    'location': 'Hyderabad, Telangana',
     'phone': '',
     'email': 'janagambharath1107@gmail.com',
     'github': 'https://github.com/janagambharath',
@@ -17,11 +17,11 @@ portfolio_data = {
     'about': {
         'education': 'Diploma in ECE',
         'current_status': '',
-        'objective': 'Aspiring LLM Engineer and AI App Developer with a strong foundation in Python, Flask, and J, combined with hands-on experience in web development and creative video editing. Passionate about building intelligent applications using LLMs, APIs, and modern AI tools to solve real-world problems. Eager to contribute to innovative tech teams, continuously learn, and grow into a full-stack AI developer to build impactful and scalable AI-driven solutions.'
+        'objective': 'Aspiring LLM Engineer and AI Developer with a strong foundation in Python, Flask, C, combined with hands-on experience in web development, chatbot creation, and creative problem-solving. Passionate about building AI-driven applications and scalable solutions by leveraging LLMs, APIs, and modern development tools. Dedicated to continuous learning, contributing to innovative projects, and growing into a full-stack AI engineer capable of delivering impactful solutions to real-world challenges.'
     },
     
     'skills': {
-        'programming': ['C', , 'Python'],
+        'programming': ['C', 'Python'],
         'web': ['HTML', 'Flask', 'CSS'],
         'data_structures': ['Arrays', 'Searching', 'Sorting', 'Recursion', 'OOP'],
         'tools': ['Termux', 'AIDE (Android)', 'VS Code', 'Git & GitHub'],
@@ -30,41 +30,40 @@ portfolio_data = {
     
     'projects': [
         {
-            'name':'Bharath Ai',
-            'language':'Python',
-            'description':'It is Bharath personal portfolio assistance and Ai',
-            'tech_stack':['Python','Flask','Deepsake Ai','Render','Json','Api']
-
-        }
+            'name': 'Bharath AI',
+            'language': 'Python',
+            'description': 'It is Bharath\'s personal portfolio assistant and AI.',
+            'tech_stack': ['Python', 'Flask', 'DeepSeek AI', 'Render', 'JSON', 'API']
+        },
         {
             'name': 'Billing System',
             'language': 'C',
-            'description': 'Manages item entry, price calculation, and total billing',
+            'description': 'Manages item entry, price calculation, and total billing.',
             'tech_stack': ['C', 'Console Application']
         },
         {
             'name': 'Banking System',
             'language': 'Java',
-            'description': 'Basic banking operations using switch-case logic',
+            'description': 'Basic banking operations using switch-case logic.',
             'tech_stack': ['Java', 'OOP', 'Console Application']
         },
         {
             'name': 'Number Guessing Game',
             'language': 'Python',
-            'description': 'Console game using random number generation',
-            'tech_stack': ['python', 'Random Generation', 'Game Logic']
+            'description': 'Console game using random number generation.',
+            'tech_stack': ['Python', 'Random Generation', 'Game Logic']
         },
         {
             'name': 'Digital Clock',
             'language': 'Python',
-            'description': 'Displays current time in digital format',
+            'description': 'Displays current time in digital format.',
             'tech_stack': ['Python', 'Time API', 'GUI']
         },
         {
             'name': 'Calculator',
             'language': 'Python',
-            'description': 'Performs basic arithmetic operations',
-            'tech_stack': ['python', 'Mathematical Operations', 'UI']
+            'description': 'Performs basic arithmetic operations.',
+            'tech_stack': ['Python', 'Mathematical Operations', 'UI']
         }
     ],
     
@@ -84,21 +83,5 @@ def home():
 def get_projects():
     return jsonify(portfolio_data['projects'])
 
-@app.route('/api/skills')
-def get_skills():
-    return jsonify(portfolio_data['skills'])
-
-@app.route('/api/contact')
-def get_contact():
-    contact_info = {
-        'phone': portfolio_data['phone'],
-        'email': portfolio_data['email'],
-        'github': portfolio_data['github'],
-        'linkedin': portfolio_data['linkedin'],
-        'location': portfolio_data['location']
-    }
-    return jsonify(contact_info)
-
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=False, host='0.0.0.0', port=port)
+    app.run(debug=True)
