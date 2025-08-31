@@ -34,6 +34,8 @@ portfolio_data = {
             'language':'Python',
             'description':'It is Bharath personal portfolio assistance and Ai',
             'tech_stack':['Python','Flask','Deepsake Ai','Render','Json','Api']
+
+        }
         {
             'name': 'Billing System',
             'language': 'C',
