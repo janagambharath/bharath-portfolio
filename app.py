@@ -32,7 +32,7 @@ portfolio_data = {
         {
             'name':'Bharath Ai',
             'language':'Python',
-            'description':'It is Bharath's personal portfolio assistance and Ai',
+            'description':'It is Bharath personal portfolio assistance and Ai',
             'tech_stack':['Python','Flask','Deepsake Ai','Render','Json','Api']
         {
             'name': 'Billing System',
