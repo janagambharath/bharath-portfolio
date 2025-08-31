@@ -7,12 +7,12 @@ app = Flask(__name__)
 portfolio_data = {
     'name': 'Bharath',
     'title': 'Aspiring LLM Engineer',
-    'location': 'Hyderbad,Telangana',
+    'location': 'Hyderabad,Telangana',
     'phone': '',
     'email': 'janagambharath1107@gmail.com',
     'github': 'https://github.com/janagambharath',
     'linkedin': 'https://www.linkedin.com/in/janagam-bharath-9ab1b235b/',
-    'bharath ai': 'https://bharathai.onrender.com',
+    'bharath_ai': 'https://bharathai.onrender.com',
     
     'about': {
         'education': 'Diploma in ECE',
