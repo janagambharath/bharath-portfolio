@@ -39,7 +39,7 @@ portfolio_data = {
             'category': 'AI',
             'description': 'Built smart AI tool that detects crop diseases from leaf images using deep learning (MobileNet) and provides actionable farming advice.',
             'tech_stack': ['Python', 'MobileNet', 'Deep Learning', 'Flask', 'Hugging Face Spaces'],
-            'live_demo': 'https://huggingface.co/spaces/janagambharath/rythu-ai',
+            'live_demo': 'https://bharath1108-rythuai.hf.space',
             'features': ['Image Classification', 'Real-time Detection', 'Farming Advice', 'Deployed on HF Spaces']
         },
         {
@@ -48,8 +48,8 @@ portfolio_data = {
             'category': 'AI',
             'description': 'Generates song lyrics from personal memories or emotions in Telugu, Hindi, and English using text-generation models.',
             'tech_stack': ['Python', 'NLP', 'Text Generation', 'Flask', 'Hugging Face'],
-            'live_demo': 'https://huggingface.co/spaces/janagambharath/memory-lyrics',
-            'features': ['Multilingual Support', 'Creative Text Synthesis', 'NLP Pipeline', 'Flask Integration']
+            'live_demo': 'https://memory-to-lyrics.onrender.com',
+            'features': ['Multilingual Support', 'Creative Text Synthesis', 'LLM Integration', 'Flask Integration']
         },
         {
             'name': 'Bharath AI - Portfolio Chatbot',
