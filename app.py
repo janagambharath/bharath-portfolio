@@ -14,7 +14,7 @@ portfolio_data = {
     'linkedin': 'https://www.linkedin.com/in/janagam-bharath-9ab1b235b/',
     'portfolio': 'https://janagambharath.github.io',
     'bharath_ai': 'https://bharathai.onrender.com',
-    'youtube': 'https://www.youtube.com/@Bharath-ai',
+    'youtube': 'https://youtube.com/@Bharath-ai',
     
     'about': {
         'education': 'Diploma in Electronics & Communication (ECE), 3rd Year',
@@ -106,4 +106,10 @@ def get_skills():
     return jsonify(portfolio_data['skills'])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # Get port from environment variable for Render deployment
+    # If PORT is not set (local development), default to 5000
+    port = int(os.environ.get('PORT', 5000))
+    
+    # Bind to 0.0.0.0 to make the server accessible externally
+    # debug=False for production deployment
+    app.run(host='0.0.0.0', port=port, debug=False)
